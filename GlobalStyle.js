@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     border: 5px solid black;
     max-width: 376px;
     max-height: 667px;
-    padding 2vw;
+    padding: 2vw;
   }
 `;
 

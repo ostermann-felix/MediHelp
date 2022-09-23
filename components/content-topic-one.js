@@ -24,12 +24,9 @@ export function ContentTopicStepTwo() {
   return (
     <>
       <Steps>
-        <div>
-          Bassa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-          vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-          venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-          Integer tincidunt.
-        </div>
+        Bassa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+        eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+        justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
       </Steps>
     </>
   );
@@ -39,4 +36,6 @@ const HeadLine = styled.h2`
   background-color: lightgray;
 `;
 
-const Steps = styled.a``;
+const Steps = styled.a`
+  margin-bottom: 2vh;
+`;
