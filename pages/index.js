@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <div>
-      <button>Click me!</button>
-    </div>
+    <>
+      <h1>Main Site</h1>{' '}
+      <Link href="/categories">
+        <a>Categories</a>
+      </Link>
+    </>
   );
 }
-
-const button = styled.button`
-  background: purple;
-  color: ivory;
-`;
