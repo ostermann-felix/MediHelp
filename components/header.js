@@ -14,10 +14,9 @@ export default function Header() {
 const Headerbody = styled.header`
   background-color: hotpink;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 `;
 
-const AppHeadline = styled.p``;
+const AppHeadline = styled.h1``;
 
 const AbcdeLink = styled.p``;
