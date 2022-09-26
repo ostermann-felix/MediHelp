@@ -5,7 +5,7 @@ import {
   ContentTopicStepTwo,
   ContentTopicStepThree,
   ContentTopicStepFour,
-} from '../../components/content-topic-two';
+} from '../../components/Content-topic-two';
 
 import Placeholderimg from '../../components/placeholderimg';
 
