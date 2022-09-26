@@ -7,6 +7,9 @@ function Categories() {
       <Link href="/content/content1">
         <a>Content1</a>
       </Link>
+      <Link href="/content/content2">
+        <a>Content2</a>
+      </Link>
     </>
   );
 }
