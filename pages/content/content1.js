@@ -1,16 +1,33 @@
-import Headline from '../../components/content-topic-one';
-import { ContentTopicStepOne } from '../../components/content-topic-one';
-import { ContentTopicStepTwo } from '../../components/content-topic-one';
+import HeadLine from '../../components/Structurecomponents';
+import { SubHeadLineSchritt } from '../../components/Structurecomponents';
+import {
+  ContentTopicStepOne,
+  ContentTopicStepTwo,
+  ContentTopicStepThree,
+  ContentTopicStepFour,
+  ContentTopicStepFive,
+} from '../../components/content-topic-one';
+
 import Placeholderimg from '../../components/placeholderimg';
 
 function content1() {
   return (
     <>
-      <Headline />
+      <HeadLine HeadLineText="Stabile Seitenlage" />
+      <SubHeadLineSchritt SubHeadLineText="Schritt 1" />
       <ContentTopicStepOne />
       <Placeholderimg />
+      <SubHeadLineSchritt SubHeadLineText="Schritt 2" />
       <ContentTopicStepTwo />
       <Placeholderimg />
+      <SubHeadLineSchritt SubHeadLineText="Schritt 3" />
+      <ContentTopicStepThree />
+      <Placeholderimg />
+      <SubHeadLineSchritt SubHeadLineText="Schritt 4" />
+      <ContentTopicStepFour />
+      <Placeholderimg />
+      <SubHeadLineSchritt SubHeadLineText="Schritt 5" />
+      <ContentTopicStepFive />
     </>
   );
 }
