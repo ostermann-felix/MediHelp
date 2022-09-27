@@ -11,8 +11,6 @@ const GlobalStyle = createGlobalStyle`
     max-width: 376px;
     max-height: 667px;
     padding: 2vw;
-    display: flex;
-    justify-content: center;
   }
 `;
 

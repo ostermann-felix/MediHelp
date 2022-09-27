@@ -16,10 +16,13 @@ export function SubHeadLineSchritt({ SubHeadLineText }) {
   );
 }
 
-const SubHeadLineTag = styled.h3`
+const HeadLineTag = styled.h2`
+  /* position: relative; */
+  top: 3vh;
+  margin-top: 2vh;
   margin-bottom: 2vh;
 `;
 
-const HeadLineTag = styled.h2`
+const SubHeadLineTag = styled.h3`
   margin-bottom: 2vh;
 `;

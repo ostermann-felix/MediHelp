@@ -10,7 +10,7 @@ import {
 
 import Placeholderimg from '../../components/placeholderimg';
 
-function content1() {
+function stabileSeitenlage() {
   return (
     <>
       <HeadLine HeadLineText="Stabile Seitenlage" />
@@ -32,4 +32,4 @@ function content1() {
   );
 }
 
-export default content1;
+export default stabileSeitenlage;
