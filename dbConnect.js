@@ -10,3 +10,5 @@ async function dbConnect() {
     console.error('Could not connect to MongoDB!', error.message);
   }
 }
+
+export default dbConnect;
