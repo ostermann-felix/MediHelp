@@ -1,11 +1,26 @@
+import Image from 'next/image';
 import styled from 'styled-components';
+import backwardicon from '../Assets/Icons/backward.ico';
+import forwardicon from '../Assets/Icons/forward.ico';
 
 export default function Footer() {
   return (
     <>
       <Footerbody>
-        <Backward />
-        <Forward />
+        <Backward
+          src={backwardicon}
+          alt="backward icon"
+          width={50}
+          height={50}
+          layout="fixed"
+        />
+        <Forward
+          src={forwardicon}
+          alt="forward icon"
+          width={50}
+          height={50}
+          layout="fixed"
+        />
       </Footerbody>
     </>
   );
@@ -14,15 +29,17 @@ export default function Footer() {
 const Footerbody = styled.footer`
   background-color: #002d55;
   display: flex;
-  justify-content: space-between;
+  height: 12%;
+  justify-content: space-around;
+  align-items: center;
   position: fixed;
-  width: 100vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 2%;
 `;
 
-const Backward = styled.div`
-  background-image: url(../Assets/Backward.ico);
-`;
+const Backward = styled(Image)``;
 
-const Forward = styled.div`
-  background-image: url(../Assets/Forward.ico);
-`;
+const Forward = styled(Image)``;

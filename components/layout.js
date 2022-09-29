@@ -4,12 +4,16 @@ import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Header />
-      {children}
+      <Main>{children}</Main>
       <Footer />
-    </div>
+    </>
   );
 };
 
 export default Layout;
+
+const Main = styled.main`
+  margin-top: 5rem;
+`;

@@ -9,7 +9,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Roboto', sans-serif;
     max-width: 376px;
-    max-height: 667px;
     padding: 2vw;
   }
 `;
