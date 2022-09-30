@@ -19,7 +19,7 @@ export default function lessonPage({ lesson }) {
       {lesson.process.map((process, index) => {
         return (
           <>
-            <h3 key={index}>{process.name}</h3>
+            <h3 key={`${index} ${process.name}`}>{process.name}</h3>
             <p key={index}>{process.instruction}</p>
           </>
         );
