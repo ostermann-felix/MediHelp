@@ -16,4 +16,5 @@ export default Layout;
 
 const Main = styled.main`
   margin-top: 5rem;
+  margin-bottom: 5rem;
 `;
