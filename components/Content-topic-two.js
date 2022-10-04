@@ -45,12 +45,12 @@ export function ContentTopicStepFour() {
   return (
     <>
       <StepsTag>
-        Unterbrechen Sie die Massage möglichst nicht und wechseln Sie sich mit
-        dritten Personen nach ein bis zwei Minuten ab um die Effizienz der
-        Massage zu gewährleisten. Der Wechsel sollte so flüssig wie möglich
-        durchgeführt werden. Der übernehmende Dritte kniet sich gegenüber an den
-        Brustkorb des zu Reanimierenden und mit einem Kommando wird die
-        Herzdruckmassage dann übernommen.
+        Unterbrechen Sie die Herzdruckmassage möglichst nicht und wechseln Sie
+        sich mit dritten Personen nach ein bis zwei Minuten ab um die Effizienz
+        zu gewährleisten. Der Wechsel sollte so flüssig wie möglich durchgeführt
+        werden. Der übernehmende Dritte kniet sich gegenüber an den Brustkorb
+        des zu Reanimierenden und mit einem Kommando wird die Herzdruckmassage
+        dann übernommen.
       </StepsTag>
     </>
   );
