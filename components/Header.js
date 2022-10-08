@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import Link from 'next/link';
-import staroflife from '../Assets/Icons/star-of-life.png';
+import staroflife from '../Assets/Icons/star_of_life.svg';
 
 export default function Header() {
   return (

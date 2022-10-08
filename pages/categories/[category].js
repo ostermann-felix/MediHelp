@@ -1,23 +1,23 @@
-import { getLessonById } from '../../src/services/lessonService';
-import Image from 'next/image';
+import { getCategoryByName } from '../../src/services/lessonService';
 
 export async function getServerSideProps(context) {
-  const { id } = context.params;
-  const lesson = await getLessonById(id);
+  const { category } = context.params;
+  const lesson = await getCategoryByName(category);
   return {
     props: {
       lesson: lesson,
+      category: category,
     },
   };
 }
 
-export default function lessonPage({ lesson }) {
-  console.log(lesson, 'Banane');
+export default function lessonPage({ lesson, category }) {
+  console.log(lesson, 'Apfel');
 
   return (
     <>
-      <h2>{lesson.name}</h2>
-      {lesson.process.map((process, index) => {
+      <h2>{category}</h2>
+      {/* {lesson.process.map((process, index) => {
         return (
           <>
             <h3 key={`${index} ${process.name}`}>{process.name}</h3>
@@ -27,7 +27,7 @@ export default function lessonPage({ lesson }) {
             </Image>
           </>
         );
-      })}
+      })} */}
     </>
   );
 }

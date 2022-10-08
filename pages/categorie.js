@@ -13,7 +13,6 @@ export async function getServerSideProps() {
 function Categorie({ lessons }) {
   return (
     <>
-      <h1>Categorie Site</h1>
       <div>
         {lessons.map((lesson) => (
           <p key={lesson.id}>

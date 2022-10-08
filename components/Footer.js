@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <>
       <Footerbody>
-        <Backward
+        {/* <Backward
           src={backwardicon}
           alt="backward icon"
           width={50}
@@ -20,7 +20,7 @@ export default function Footer() {
           width={50}
           height={50}
           layout="fixed"
-        />
+        /> */}
       </Footerbody>
     </>
   );

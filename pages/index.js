@@ -1,14 +1,11 @@
-import styled from 'styled-components';
-
-import Link from 'next/link';
+import Placeholderimg from '../components/Placeholderimg';
+import CategoryGrid from '../components/CategoryGrid';
 
 export default function Home() {
   return (
-    <div>
-      <h1>Main Site</h1>{' '}
-      <Link href="/categorie">
-        <a>Categories</a>
-      </Link>
-    </div>
+    <>
+      <Placeholderimg />
+      <CategoryGrid />
+    </>
   );
 }
