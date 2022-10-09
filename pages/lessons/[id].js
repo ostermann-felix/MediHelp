@@ -12,19 +12,22 @@ export async function getServerSideProps(context) {
 }
 
 export default function lessonPage({ lesson }) {
-  console.log(lesson, 'Banane');
-
   return (
     <>
       <h2>{lesson.name}</h2>
       {lesson.process.map((process, index) => {
+        console.log(process.visual);
         return (
           <>
             <h3 key={`${index} ${process.name}`}>{process.name}</h3>
             <p key={index}>{process.instruction}</p>
-            <Image key={`${process.name} ${index}`} alt="instruction visual">
-              {process.visual}
-            </Image>
+            <Image
+              key={`${process.name} ${index}`}
+              alt="instruction visual"
+              src={process.visual}
+              width={100}
+              height={100}
+            />
           </>
         );
       })}

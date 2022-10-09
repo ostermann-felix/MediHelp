@@ -5,27 +5,23 @@ import Image from 'next/image';
 export default function CategoryGrid({ lessons }) {
   console.log(lessons);
   return (
-    <>
-      <div>
-        <CatGrid>
-          {lessons &&
-            lessons.map((lesson) => (
-              <IconBox key={lesson.id}>
-                <Link href={`/categories/${lesson.category.name}`} passHref>
-                  <CatLink>
-                    <Image
-                      src={lesson.category.visual}
-                      alt="category image"
-                      width={150}
-                      height={150}
-                    />
-                  </CatLink>
-                </Link>
-              </IconBox>
-            ))}
-        </CatGrid>
-      </div>
-    </>
+    <CatGrid>
+      {lessons &&
+        lessons.map((lesson) => (
+          <IconBox key={lesson.id}>
+            <Link href={`/categories/${lesson.category.name}`} passHref>
+              <CatLink>
+                <Image
+                  src={lesson.category.visual}
+                  alt="category image"
+                  width={150}
+                  height={150}
+                />
+              </CatLink>
+            </Link>
+          </IconBox>
+        ))}
+    </CatGrid>
   );
 }
 
@@ -36,7 +32,7 @@ const CatGrid = styled.div`
   background-color: hotpink;
 `;
 
-const CatLink = styled.a`
+const CatLink = styled.div`
   background-color: lightgray;
   width: 70px;
   height: 70px;
