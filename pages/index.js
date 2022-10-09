@@ -1,11 +1,21 @@
 import Placeholderimg from '../components/Placeholderimg';
 import CategoryGrid from '../components/CategoryGrid';
+import getAllLessons from '../src/services/lessonService';
 
-export default function Home() {
+export async function getServerSideProps() {
+  const lessons = await getAllLessons();
+  return {
+    props: {
+      lessons: lessons,
+    },
+  };
+}
+
+export default function Home({ lessons }) {
   return (
     <>
       <Placeholderimg />
-      <CategoryGrid />
+      <CategoryGrid lessons={lessons} />
     </>
   );
 }

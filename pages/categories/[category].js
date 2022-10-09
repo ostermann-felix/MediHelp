@@ -17,7 +17,7 @@ export default function lessonPage({ lesson, category }) {
   return (
     <>
       <h2>{category}</h2>
-      {/* {lesson.process.map((process, index) => {
+      {lesson.process.map((process, index) => {
         return (
           <>
             <h3 key={`${index} ${process.name}`}>{process.name}</h3>
@@ -27,7 +27,7 @@ export default function lessonPage({ lesson, category }) {
             </Image>
           </>
         );
-      })} */}
+      })}
     </>
   );
 }

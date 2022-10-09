@@ -1,36 +1,28 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import getAllLessons from '../src/services/lessonService';
 import Image from 'next/image';
 
-export async function getServerSideProps() {
-  const lessons = await getAllLessons();
-  return {
-    props: {
-      lessons: lessons,
-    },
-  };
-}
-
 export default function CategoryGrid({ lessons }) {
+  console.log(lessons);
   return (
     <>
       <div>
         <CatGrid>
-          {lessons.map((lesson) => (
-            <IconBox key={lesson.id}>
-              <Link href={`/categories/${lesson.category.name}`} passHref>
-                <CatLink>
-                  <Image
-                    src={lesson.category.visual}
-                    alt="category image"
-                    width={150}
-                    height={150}
-                  />
-                </CatLink>
-              </Link>
-            </IconBox>
-          ))}
+          {lessons &&
+            lessons.map((lesson) => (
+              <IconBox key={lesson.id}>
+                <Link href={`/categories/${lesson.category.name}`} passHref>
+                  <CatLink>
+                    <Image
+                      src={lesson.category.visual}
+                      alt="category image"
+                      width={150}
+                      height={150}
+                    />
+                  </CatLink>
+                </Link>
+              </IconBox>
+            ))}
         </CatGrid>
       </div>
     </>
@@ -44,7 +36,7 @@ const CatGrid = styled.div`
   background-color: hotpink;
 `;
 
-const CatLink = styled.div`
+const CatLink = styled.a`
   background-color: lightgray;
   width: 70px;
   height: 70px;
