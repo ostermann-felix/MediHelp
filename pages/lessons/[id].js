@@ -21,13 +21,15 @@ export default function lessonPage({ lesson }) {
           <>
             <h3 key={`${index} ${process.name}`}>{process.name}</h3>
             <p key={index}>{process.instruction}</p>
-            <Image
-              key={`${process.name} ${index}`}
-              alt="instruction visual"
-              src={process.visual}
-              width={100}
-              height={100}
-            />
+            {process.visual ? (
+              <Image
+                key={`${process.name} ${index}`}
+                alt="instruction visual"
+                src={process.visual}
+                width={350}
+                height={350}
+              />
+            ) : null}
           </>
         );
       })}

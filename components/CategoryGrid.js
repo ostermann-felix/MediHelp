@@ -29,15 +29,21 @@ const CatGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: hotpink;
+  justify-content: center;
+  padding: 5%;
 `;
 
-const CatLink = styled.div`
-  background-color: lightgray;
-  width: 70px;
-  height: 70px;
-`;
+const CatLink = styled.div``;
 
 const IconBox = styled.div`
-  width: 75px;
+  border: solid black 2px;
+  justify-self: center;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(227, 228, 228, 1) 48%,
+    rgba(227, 227, 227, 1) 100%
+  );
 `;

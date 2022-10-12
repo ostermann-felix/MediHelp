@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import backwardicon from '../Assets/Icons/backward.ico';
-import forwardicon from '../Assets/Icons/forward.ico';
 
 export default function Footer() {
   return (
