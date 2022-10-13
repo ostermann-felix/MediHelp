@@ -14,7 +14,7 @@ export async function getServerSideProps(context) {
   };
 }
 
-export default function lessonPage({ category, lessons }) {
+export default function CategoryPage({ category, lessons }) {
   return (
     <>
       <CategoryWrapper>
@@ -31,10 +31,8 @@ export default function lessonPage({ category, lessons }) {
       {lessons.map((lesson, index) => {
         return (
           <>
-            <LessonBox>
-              <Link href={`/lessons/${lesson.id}`} alt="" key={lesson.id}>
-                {lesson.name}
-              </Link>
+            <LessonBox key={lesson.id}>
+              <Link href={`/lessons/${lesson.id}`}>{lesson.name}</Link>
             </LessonBox>
           </>
         );

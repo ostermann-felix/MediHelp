@@ -4,22 +4,7 @@ import styled from 'styled-components';
 export default function Footer() {
   return (
     <>
-      <Footerbody>
-        {/* <Backward
-          src={backwardicon}
-          alt="backward icon"
-          width={50}
-          height={50}
-          layout="fixed"
-        />
-        <Forward
-          src={forwardicon}
-          alt="forward icon"
-          width={50}
-          height={50}
-          layout="fixed"
-        /> */}
-      </Footerbody>
+      <Footerbody></Footerbody>
     </>
   );
 }

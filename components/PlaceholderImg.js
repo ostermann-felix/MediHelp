@@ -6,15 +6,13 @@ export default function PlaceholderImg() {
   return (
     <>
       <ImgBackground>
-        <Little_paramedic>
-          <Image
-            src={Littleparamedic}
-            alt="App Logo"
-            width={180}
-            height={180}
-            layout="fixed"
-          />
-        </Little_paramedic>
+        <Image
+          src={Littleparamedic}
+          alt="App Logo"
+          width={180}
+          height={180}
+          layout="fixed"
+        />
       </ImgBackground>
     </>
   );
@@ -28,5 +26,3 @@ const ImgBackground = styled.div`
   border-radius: 12px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
-
-const Little_paramedic = styled.div``;
