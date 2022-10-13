@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import Littleparamedic from '../Assets/Icons/little_paramedic.svg';
 
-export default function Placeholderimg() {
+export default function PlaceholderImg() {
   return (
     <>
       <ImgBackground>
