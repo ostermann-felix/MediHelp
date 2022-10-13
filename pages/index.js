@@ -1,4 +1,4 @@
-import Placeholderimg from '../components/Placeholderimg';
+import PlaceholderImg from '../components/PlaceholderImg';
 import CategoryGrid from '../components/CategoryGrid';
 import getAllLessons from '../src/services/lessonService';
 
@@ -14,7 +14,7 @@ export async function getServerSideProps() {
 export default function Home({ lessons }) {
   return (
     <>
-      <Placeholderimg />
+      <PlaceholderImg />
       <CategoryGrid lessons={lessons} />
     </>
   );

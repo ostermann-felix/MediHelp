@@ -31,11 +31,11 @@ export default function lessonPage({ category, lessons }) {
       {lessons.map((lesson, index) => {
         return (
           <>
-            {/* <p key={index}>{lesson.instruction}</p> */}
-
-            <Link href={`/lessons/${lesson.id}`} alt="" key={lesson.id}>
-              {lesson.name}
-            </Link>
+            <LessonBox>
+              <Link href={`/lessons/${lesson.id}`} alt="" key={lesson.id}>
+                {lesson.name}
+              </Link>
+            </LessonBox>
           </>
         );
       })}
@@ -52,7 +52,15 @@ const IconBox = styled.div`
   justify-content: center;
   border-radius: 12px;
   margin-right: 16px;
+  padding: 11px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   height: 80px;
   width: 80px;
+`;
+
+const LessonBox = styled.p`
+  padding: 11px;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-decoration: none;
 `;
