@@ -17,7 +17,7 @@ export default function CategoryGrid({ lessons }) {
                   width={80}
                   height={80}
                 />
-                <LessonName>{lesson.name}</LessonName>
+                <LessonName>{lesson.category.name}</LessonName>
               </CatLink>
             </Link>
           </IconBox>
@@ -35,17 +35,19 @@ const CatGrid = styled.div`
   gap: 5%;
 `;
 
+const IconBox = styled.div`
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+`;
+
 const CatLink = styled.div`
   display: flex;
   flex-direction: column;
-  width: 33%;
-`;
-
-const IconBox = styled.div`
-  align-self: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
 const LessonName = styled.p`
   text-align: center;
+  font-size: 0.7rem;
 `;

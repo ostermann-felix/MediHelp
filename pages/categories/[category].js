@@ -31,7 +31,7 @@ export default function lessonPage({ category, lessons }) {
       {lessons.map((lesson, index) => {
         return (
           <>
-            <p key={index}>{lesson.instruction}</p>
+            {/* <p key={index}>{lesson.instruction}</p> */}
 
             <Link href={`/lessons/${lesson.id}`} alt="" key={lesson.id}>
               {lesson.name}
@@ -48,8 +48,11 @@ const CategoryWrapper = styled.div`
 `;
 
 const IconBox = styled.div`
-  justify-self: center;
-  margin-right: 15.5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  margin-right: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 80px;
+  width: 80px;
 `;
