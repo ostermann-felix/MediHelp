@@ -32,7 +32,9 @@ export default function CategoryPage({ category, lessons }) {
         return (
           <>
             <LessonBox key={lesson.id}>
-              <Link href={`/lessons/${lesson.id}`}>{lesson.name}</Link>
+              <Link href={`/lessons/${lesson.id}`} passHref>
+                <LinkStyle>{lesson.name}</LinkStyle>
+              </Link>
             </LessonBox>
           </>
         );
@@ -61,4 +63,11 @@ const LessonBox = styled.p`
   border-radius: 12px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-decoration: none;
+`;
+
+const LinkStyle = styled.a`
+  text-decoration: none;
+  &:visited {
+    color: black;
+  }
 `;
