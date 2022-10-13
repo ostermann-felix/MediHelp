@@ -14,9 +14,10 @@ export default function CategoryGrid({ lessons }) {
                 <Image
                   src={lesson.category.visual}
                   alt="category image"
-                  width={150}
-                  height={150}
+                  width={80}
+                  height={80}
                 />
+                <LessonName>{lesson.name}</LessonName>
               </CatLink>
             </Link>
           </IconBox>
@@ -30,20 +31,21 @@ const CatGrid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
-  padding: 5%;
+  margin-top: 5%;
+  gap: 5%;
 `;
 
-const CatLink = styled.div``;
+const CatLink = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+`;
 
 const IconBox = styled.div`
-  border: solid black 2px;
-  justify-self: center;
-  background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(227, 228, 228, 1) 48%,
-    rgba(227, 227, 227, 1) 100%
-  );
+  align-self: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+`;
+
+const LessonName = styled.p`
+  text-align: center;
 `;

@@ -29,7 +29,7 @@ export default function lessonPage({ lesson }) {
                   alt="instruction visual"
                   src={process.visual}
                   width={350}
-                  height={350}
+                  height={160}
                 />
               </LessonVisual>
             ) : null}
@@ -41,5 +41,5 @@ export default function lessonPage({ lesson }) {
 }
 
 const LessonVisual = styled.div`
-  z-index: -100;
+  height: 20%;
 `;

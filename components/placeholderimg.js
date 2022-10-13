@@ -21,19 +21,11 @@ export default function Placeholderimg() {
 }
 
 const ImgBackground = styled.div`
-  border: solid black 2px;
   height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(227, 228, 228, 1) 48%,
-    rgba(227, 227, 227, 1) 100%
-  );
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
 const Little_paramedic = styled.div``;
