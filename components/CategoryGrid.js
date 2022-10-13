@@ -44,6 +44,7 @@ const IconBox = styled.div`
 
 const CatLink = styled.div`
   display: flex;
+  margin-top: 11px;
   flex-direction: column;
 `;
 
