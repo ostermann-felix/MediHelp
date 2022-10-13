@@ -1,14 +1,21 @@
-import styled from 'styled-components';
+import PlaceholderImg from '../components/PlaceholderImg';
+import CategoryGrid from '../components/CategoryGrid';
+import getAllLessons from '../src/services/lessonService';
 
-import Link from 'next/link';
+export async function getServerSideProps() {
+  const lessons = await getAllLessons();
+  return {
+    props: {
+      lessons: lessons,
+    },
+  };
+}
 
-export default function Home() {
+export default function Home({ lessons }) {
   return (
-    <div>
-      <h1>Main Site</h1>{' '}
-      <Link href="/categorie">
-        <a>Categories</a>
-      </Link>
-    </div>
+    <>
+      <PlaceholderImg />
+      <CategoryGrid lessons={lessons} />
+    </>
   );
 }

@@ -5,6 +5,7 @@ const { Schema } = mongoose;
 const lessonSchema = new Schema({
   name: { type: String, required: true },
   process: { type: Array, required: true },
+  category: { type: Object, required: true },
 });
 
 const Lesson = mongoose.models.Lesson || mongoose.model('Lesson', lessonSchema);

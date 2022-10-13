@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import Link from 'next/link';
-import staroflife from '../Assets/Icons/star-of-life.png';
+import staroflife from '../Assets/Icons/star_of_life.svg';
 
 export default function Header() {
   return (
@@ -34,6 +34,8 @@ const Headerbody = styled.header`
   left: 0;
   right: 0;
   width: 100%;
+  z-index: 1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
 const AppHeadline = styled.h1`
